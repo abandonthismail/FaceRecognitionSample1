@@ -1,0 +1,24 @@
+﻿<Window x:Class="FaceRecognitionSample1.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:FaceRecognitionSample1.ViewModels"
+        xmlns:views="clr-namespace:FaceRecognitionSample1.Views"
+        xmlns:converters="clr-namespace:FaceRecognitionSample1.Converters"
+        xmlns:helpers="clr-namespace:FaceRecognitionSample1.Helpers"
+        xmlns:properties="clr-namespace:FaceRecognitionSample1.Properties"
+        Title="MainWindow" 
+        WindowStartupLocation="CenterScreen"
+        Width="1200" Height="800"
+        MinWidth="1000" MinHeight="680"
+        helpers:WindowBehavior.AspectRatio="1.5">
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:FaceRecognitionViewModel}">
+            <views:FaceRecognitionView />
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid>
+        <ContentControl Content="{Binding Navigation.CurrentViewModel}" />
+    </Grid>
+</Window>
