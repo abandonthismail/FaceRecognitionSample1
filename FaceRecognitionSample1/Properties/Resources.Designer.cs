@@ -70,11 +70,29 @@ namespace FaceRecognitionSample1.Properties {
         }
         
         /// <summary>
+        ///   戻る に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string BackButtonText {
+            get {
+                return ResourceManager.GetString("BackButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   設定 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string BtnSettings {
             get {
                 return ResourceManager.GetString("BtnSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   照合開始 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string BtnStartRecognition {
+            get {
+                return ResourceManager.GetString("BtnStartRecognition", resourceCulture);
             }
         }
         
@@ -93,6 +111,133 @@ namespace FaceRecognitionSample1.Properties {
         public static string CameraViewTitle {
             get {
                 return ResourceManager.GetString("CameraViewTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   条件クリア に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ClearSearchButton {
+            get {
+                return ResourceManager.GetString("ClearSearchButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ユーザを選択してください に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ComboDefaultSelectUser {
+            get {
+                return ResourceManager.GetString("ComboDefaultSelectUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   完了 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CompleteTitle {
+            get {
+                return ResourceManager.GetString("CompleteTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ＋ 新規登録 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CreateUserButton {
+            get {
+                return ResourceManager.GetString("CreateUserButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ～ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DateRangeSeparator {
+            get {
+                return ResourceManager.GetString("DateRangeSeparator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   選択したユーザーを削除 ({0}) に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DeleteButtonFormat {
+            get {
+                return ResourceManager.GetString("DeleteButtonFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   {0} 件のユーザーを削除しました。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DeleteCompleteMessageFormat {
+            get {
+                return ResourceManager.GetString("DeleteCompleteMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   選択された {0} 件のユーザーを完全に削除しますか？
+        ///この操作は取り消せません。 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DeleteConfirmMessageFormat {
+            get {
+                return ResourceManager.GetString("DeleteConfirmMessageFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   削除の確認 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DeleteConfirmTitle {
+            get {
+                return ResourceManager.GetString("DeleteConfirmTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   編集 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string EditButton {
+            get {
+                return ResourceManager.GetString("EditButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   顔写真 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string FaceThumbnailColumn {
+            get {
+                return ResourceManager.GetString("FaceThumbnailColumn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   照合方式 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string HeaderRecognitionMode {
+            get {
+                return ResourceManager.GetString("HeaderRecognitionMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   照合対象ユーザ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string HeaderTargetUser {
+            get {
+                return ResourceManager.GetString("HeaderTargetUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   照合モード に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string HeaderTriggerMode {
+            get {
+                return ResourceManager.GetString("HeaderTriggerMode", resourceCulture);
             }
         }
         
@@ -140,60 +285,6 @@ namespace FaceRecognitionSample1.Properties {
                 return ResourceManager.GetString("ModeOneToMany", resourceCulture);
             }
         }
-
-        /// <summary>
-        ///   照合方式
-        /// </summary>
-        public static string HeaderRecognitionMode {
-            get {
-                return ResourceManager.GetString("HeaderRecognitionMode", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   照合モード
-        /// </summary>
-        public static string HeaderTriggerMode {
-            get {
-                return ResourceManager.GetString("HeaderTriggerMode", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   照合対象ユーザ
-        /// </summary>
-        public static string HeaderTargetUser {
-            get {
-                return ResourceManager.GetString("HeaderTargetUser", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   ユーザ名でフィルタ
-        /// </summary>
-        public static string PlaceholderSearchUser {
-            get {
-                return ResourceManager.GetString("PlaceholderSearchUser", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   ユーザを選択してください
-        /// </summary>
-        public static string ComboDefaultSelectUser {
-            get {
-                return ResourceManager.GetString("ComboDefaultSelectUser", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   照合開始
-        /// </summary>
-        public static string BtnStartRecognition {
-            get {
-                return ResourceManager.GetString("BtnStartRecognition", resourceCulture);
-            }
-        }
         
         /// <summary>
         ///   1:1 に類似しているローカライズされた文字列を検索します。
@@ -201,6 +292,24 @@ namespace FaceRecognitionSample1.Properties {
         public static string ModeOneToOne {
             get {
                 return ResourceManager.GetString("ModeOneToOne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   操作 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string OperationColumn {
+            get {
+                return ResourceManager.GetString("OperationColumn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ユーザ名でフィルタ に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string PlaceholderSearchUser {
+            get {
+                return ResourceManager.GetString("PlaceholderSearchUser", resourceCulture);
             }
         }
         
@@ -268,6 +377,24 @@ namespace FaceRecognitionSample1.Properties {
         }
         
         /// <summary>
+        ///   登録日 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string RegistrationDateColumn {
+            get {
+                return ResourceManager.GetString("RegistrationDateColumn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   登録日（期間） に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string RegistrationDatePeriodLabel {
+            get {
+                return ResourceManager.GetString("RegistrationDatePeriodLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   照合結果 (1:N) に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ResultTitleOneToMany {
@@ -291,6 +418,15 @@ namespace FaceRecognitionSample1.Properties {
         public static string ScoreLabel {
             get {
                 return ResourceManager.GetString("ScoreLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   検索 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string SearchButton {
+            get {
+                return ResourceManager.GetString("SearchButton", resourceCulture);
             }
         }
         
@@ -376,6 +512,15 @@ namespace FaceRecognitionSample1.Properties {
         }
         
         /// <summary>
+        ///   合計 {0} 件 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string TotalCountFormat {
+            get {
+                return ResourceManager.GetString("TotalCountFormat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   トリガー に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string TriggerManual {
@@ -403,6 +548,15 @@ namespace FaceRecognitionSample1.Properties {
         }
         
         /// <summary>
+        ///   ユーザID に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string UserIdColumn {
+            get {
+                return ResourceManager.GetString("UserIdColumn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   ユーザ管理画面を開きます。 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string UserManagementOpenMessage {
@@ -412,11 +566,38 @@ namespace FaceRecognitionSample1.Properties {
         }
         
         /// <summary>
+        ///   ユーザー管理 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string UserManagementTitle {
+            get {
+                return ResourceManager.GetString("UserManagementTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ユーザ名 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string UserNameColumn {
+            get {
+                return ResourceManager.GetString("UserNameColumn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   ユーザ名でフィルタ に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string UserNameFilter {
             get {
                 return ResourceManager.GetString("UserNameFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ユーザー検索 に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string UserSearchLabel {
+            get {
+                return ResourceManager.GetString("UserSearchLabel", resourceCulture);
             }
         }
     }

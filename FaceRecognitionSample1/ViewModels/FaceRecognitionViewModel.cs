@@ -29,8 +29,7 @@ namespace FaceRecognitionSample1.ViewModels
         private readonly ICameraProvider _cameraProvider;
         private readonly IFaceRecognitionProvider _faceRecognitionProvider;
         private readonly ISettingsService _settingsService;
-        private readonly INavigationService _navigationService;
-
+        
         // Hold references to child ViewModels to prevent re-creation
         private readonly OneToOneViewModel _oneToOneViewModel;
         private readonly OneToManyViewModel _oneToManyViewModel;
@@ -68,12 +67,18 @@ namespace FaceRecognitionSample1.ViewModels
         };
 
         public ISettingsService Settings { get; }
+        /// <summary>
+        /// Gets the navigation service instance.
+        /// </summary>
+        public INavigationService Navigation { get; }
 
+        /// <summary>
+        /// Command to navigate to the User Management screen.
+        /// </summary>
         [RelayCommand]
         private void OpenUserManagement()
         {
-            // TODO: ユーザ管理画面（別ウィンドウやダイアログ）を開く処理
-            System.Windows.MessageBox.Show(FaceRecognitionSample1.Properties.Resources.UserManagementOpenMessage);
+            Navigation.NavigateTo<UserManagementViewModel>();
         }
 
         [RelayCommand]
@@ -94,7 +99,7 @@ namespace FaceRecognitionSample1.ViewModels
             // Inject dependencies
             _cameraProvider = cameraProvider;
             _faceRecognitionProvider = faceRecognitionProvider;
-            _navigationService = navigationService;
+            Navigation = navigationService;
             _settingsService = settingsService;
 
             _oneToOneViewModel = oneToOneViewModel;

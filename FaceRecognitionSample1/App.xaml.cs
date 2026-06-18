@@ -1,4 +1,6 @@
-﻿using FaceRecognitionSample1.Services;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using FaceRecognitionSample1.Repositories;
+using FaceRecognitionSample1.Services;
 using FaceRecognitionSample1.Services.Interfaces;
 using FaceRecognitionSample1.Services.Mocks;
 using FaceRecognitionSample1.ViewModels;
@@ -49,13 +51,24 @@ namespace FaceRecognitionSample1
             services.AddSingleton<ICameraProvider, MockCameraAdapter>();
             services.AddSingleton<IFaceRecognitionProvider, MockFaceRecognitionAdapter>();
             services.AddSingleton<ISettingsService, SettingsService>();
-            services.AddSingleton<INavigationService, NavigationService>();
+            services.AddSingleton<IDialogService, DialogService>();
+            services.AddSingleton<IDispatcherService, WpfDispatcherService>();
+            services.AddSingleton<IUserRepository, InMemoryUserRepository>();
 
             // Register ViewModels
             services.AddSingleton<MainViewModel>();
             services.AddTransient<FaceRecognitionViewModel>();
+            services.AddTransient<UserManagementViewModel>();
             services.AddTransient<OneToOneViewModel>();
             services.AddTransient<OneToManyViewModel>();
+
+            // Register the NavigationService by injecting the factory delegate that leverages the IServiceProvider
+            services.AddSingleton<INavigationService>(provider =>
+            {
+                // Define the factory function to resolve requested ViewModel types from the container
+                Func<Type, ObservableObject> factory = type => (ObservableObject)provider.GetRequiredService(type);
+                return new NavigationService(factory);
+            });
         }
 
         private void App_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)

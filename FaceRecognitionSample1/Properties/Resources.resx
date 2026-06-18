@@ -237,4 +237,65 @@
   <data name="BtnStartRecognition" xml:space="preserve">
     <value>照合開始</value>
   </data>
+  <data name="UserManagementTitle" xml:space="preserve">
+    <value>ユーザー管理</value>
+  </data>
+  <data name="CreateUserButton" xml:space="preserve">
+    <value>＋ 新規登録</value>
+  </data>
+  <data name="UserSearchLabel" xml:space="preserve">
+    <value>ユーザー検索</value>
+  </data>
+  <data name="RegistrationDatePeriodLabel" xml:space="preserve">
+    <value>登録日（期間）</value>
+  </data>
+  <data name="DateRangeSeparator" xml:space="preserve">
+    <value>～</value>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="ClearSearchButton" xml:space="preserve">
+    <value>条件クリア</value>
+  </data>
+  <data name="FaceThumbnailColumn" xml:space="preserve">
+    <value>顔写真</value>
+  </data>
+  <data name="UserIdColumn" xml:space="preserve">
+    <value>ユーザID</value>
+  </data>
+  <data name="UserNameColumn" xml:space="preserve">
+    <value>ユーザ名</value>
+  </data>
+  <data name="RegistrationDateColumn" xml:space="preserve">
+    <value>登録日</value>
+  </data>
+  <data name="OperationColumn" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="EditButton" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="DeleteButtonFormat" xml:space="preserve">
+    <value>選択したユーザーを削除 ({0})</value>
+  </data>
+  <data name="TotalCountFormat" xml:space="preserve">
+    <value>合計 {0} 件</value>
+  </data>
+  <data name="DeleteConfirmMessageFormat" xml:space="preserve">
+    <value>選択された {0} 件のユーザーを完全に削除しますか？
+この操作は取り消せません。</value>
+  </data>
+  <data name="DeleteConfirmTitle" xml:space="preserve">
+    <value>削除の確認</value>
+  </data>
+  <data name="DeleteCompleteMessageFormat" xml:space="preserve">
+    <value>{0} 件のユーザーを削除しました。</value>
+  </data>
+  <data name="CompleteTitle" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="BackButtonText" xml:space="preserve">
+    <value>戻る</value>
+  </data>
 </root>

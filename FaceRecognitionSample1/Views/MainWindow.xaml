@@ -16,6 +16,10 @@
         <DataTemplate DataType="{x:Type vm:FaceRecognitionViewModel}">
             <views:FaceRecognitionView />
         </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:UserManagementViewModel}">
+            <views:UserManagementView />
+        </DataTemplate>
     </Window.Resources>
 
     <Grid>

@@ -219,22 +219,83 @@
   <data name="ModeOneToMany" xml:space="preserve">
     <value>1:N</value>
   </data>
-    <data name="HeaderRecognitionMode" xml:space="preserve">
-        <value>Recognition Mode</value>
-    </data>
-    <data name="HeaderTriggerMode" xml:space="preserve">
-        <value>Trigger Mode</value>
-    </data>
-    <data name="HeaderTargetUser" xml:space="preserve">
-        <value>Target Users</value>
-    </data>
-    <data name="PlaceholderSearchUser" xml:space="preserve">
-        <value>Filter by username</value>
-    </data>
-    <data name="ComboDefaultSelectUser" xml:space="preserve">
-        <value>Please select a user</value>
-    </data>
-    <data name="BtnStartRecognition" xml:space="preserve">
-        <value>Start Recognition</value>
-    </data>
+  <data name="HeaderRecognitionMode" xml:space="preserve">
+    <value>Recognition Mode</value>
+  </data>
+  <data name="HeaderTriggerMode" xml:space="preserve">
+    <value>Trigger Mode</value>
+  </data>
+  <data name="HeaderTargetUser" xml:space="preserve">
+    <value>Target Users</value>
+  </data>
+  <data name="PlaceholderSearchUser" xml:space="preserve">
+    <value>Filter by username</value>
+  </data>
+  <data name="ComboDefaultSelectUser" xml:space="preserve">
+    <value>Please select a user</value>
+  </data>
+  <data name="BtnStartRecognition" xml:space="preserve">
+    <value>Start Recognition</value>
+  </data>
+  <data name="UserManagementTitle" xml:space="preserve">
+    <value>User Management</value>
+  </data>
+  <data name="CreateUserButton" xml:space="preserve">
+    <value>+Registeration</value>
+  </data>
+  <data name="UserSearchLabel" xml:space="preserve">
+    <value>Search User</value>
+  </data>
+  <data name="RegistrationDatePeriodLabel" xml:space="preserve">
+    <value>Registration Date (Period)</value>
+  </data>
+  <data name="DateRangeSeparator" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ClearSearchButton" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="FaceThumbnailColumn" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="UserIdColumn" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="UserNameColumn" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="RegistrationDateColumn" xml:space="preserve">
+    <value>Registration Date</value>
+  </data>
+  <data name="OperationColumn" xml:space="preserve">
+    <value>Operation</value>
+  </data>
+  <data name="EditButton" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="DeleteButtonFormat" xml:space="preserve">
+    <value>Delete selected users ({0})</value>
+  </data>
+  <data name="TotalCountFormat" xml:space="preserve">
+    <value>Total {0} users</value>
+  </data>
+  <data name="DeleteConfirmMessageFormat" xml:space="preserve">
+    <value>Are you sure you want to permanently delete the selected {0} user(s)?
+This action cannot be undone.</value>
+  </data>
+  <data name="DeleteConfirmTitle" xml:space="preserve">
+    <value>Delete Confirmation</value>
+  </data>
+  <data name="DeleteCompleteMessageFormat" xml:space="preserve">
+    <value>Deleted {0} user(s).</value>
+  </data>
+  <data name="CompleteTitle" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="BackButtonText" xml:space="preserve">
+    <value>Back</value>
+  </data>
 </root>
